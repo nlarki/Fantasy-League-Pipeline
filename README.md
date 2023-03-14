@@ -7,7 +7,7 @@ The core premise of this project is to showcase what i have learned whilst parta
 The project will aim to extract multiple years of FPL data for analysis so that we can take a deeper look into individual  stats of players and teams across the 2016 to 2023 seasons. 
 
 Key goals of the project are:
-* Develop a data pipeline that will help to organize data processing in a batch manner (on a monthly basis);
+* Develop a data pipeline that will help to organize data processing in a batch manner (on a yearly basis);
 * Build analytical dashboard that will make it easy to discern the trends and digest the insights.
 
 ## Technologies
