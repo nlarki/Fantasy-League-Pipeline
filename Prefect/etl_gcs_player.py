@@ -49,7 +49,9 @@ def testing(yearOne: int, yearTwo: int):
 
     df = fetchData(dataset_url)
     clean = cleanData(df, yearOne, yearTwo)
-    write_local(clean, yearOne, yearTwo, dataName)
+    path = write_local(clean, yearOne, yearTwo, dataName)
+    write_gcs(path)
+    
     # write_gcs(path)
 
 @flow() #loop through all possible years of data
