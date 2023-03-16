@@ -15,7 +15,7 @@ def fetchData(dataset_url: str):
 def cleanData(df, yearOne: int, yearTwo: int):
     df["cost"] = df["now_cost"]/10
     #creating a list of all columns that i want to keep in finalised dataset
-    final_table_columns = ["first_name","second_name","goals_scored","assists","total_points,minutes",
+    final_table_columns = ["first_name","second_name","goals_scored","assists","total_points","minutes",
                            "goals_conceded","creativity","influence","threat","bonus","bps","ict_index",
                            "clean_sheets","red_cards","yellow_cards","selected_by_percent","cost",
                            "element_type","team_code"]
