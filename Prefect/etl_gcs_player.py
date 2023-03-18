@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 import pandas as pd
 from prefect import flow, task
 from prefect_gcp.cloud_storage import GcsBucket
@@ -12,17 +13,18 @@ def fetchData(dataset_url: str):
 
 
 @task()
-def cleanData(df, yearOne: int, yearTwo: int):
+def cleanData(df: pd.DataFrame, yearOne: int, yearTwo: int):
     df["cost"] = df["now_cost"]/10
     #creating a list of all columns that i want to keep in finalised dataset
     final_table_columns = ["first_name","second_name","goals_scored","assists","total_points","minutes",
                            "goals_conceded","creativity","influence","threat","bonus","bps","ict_index",
                            "clean_sheets","red_cards","yellow_cards","selected_by_percent","cost",
-                           "element_type","team_code"]
+                           "element_type","team"]
 
     df.drop(columns=[col for col in df if col not in final_table_columns], inplace=True)
     #create a column to specify what season the data is for and to convert cost to correct values
     df["Season"] = f"20{yearOne}-{yearTwo}"
+    df.rename(columns={'team':'team_id'}, inplace=True)
     print(f"columns: {df.dtypes}")
     print(f"rows: {len(df)}")
     return df
@@ -37,8 +39,11 @@ def write_local(df: pd.DataFrame, yearOne: int, yearTwo: int, dataName: str):
 
 @task() #write to gcs bucket using prefect blocks
 def write_gcs(path: Path):
+    #doing this as path object keeps windows path, which causes issues when writing to GCS
+    newPath = str(path)
+    newPath = newPath.replace("\\", "/")
     gcp_cloud_storage_bucket_block = GcsBucket.load("fpl-gcs")
-    gcp_cloud_storage_bucket_block.upload_from_path(from_path=path, to_path=path, timeout=(10,200))
+    gcp_cloud_storage_bucket_block.upload_from_path(from_path=path, to_path=newPath, timeout=(10,200))
     return
 
 
