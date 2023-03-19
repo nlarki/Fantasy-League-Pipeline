@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: get_position
+    description: >
+      This macro receives a element_type and returns the corresponding position.
+    arguments:
+      - name: element_type
+        type: int
+        description: > 
+          element_type value.
+          Must be one of the accepted values, otherwise the macro will return null
