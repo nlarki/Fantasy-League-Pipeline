@@ -31,6 +31,16 @@ def write_local(df: pd.DataFrame, yearOne: int, yearTwo: int, dataName: str):
     print(path)
     return path
 
+@task() #write to gcs bucket using prefect blocks
+def write_gcs(path: Path):
+    #doing this as path object keeps windows path, which causes issues when writing to GCS
+    newPath = str(path)
+    newPath = newPath.replace("\\", "/")
+    gcp_cloud_storage_bucket_block = GcsBucket.load("fpl-gcs")
+    gcp_cloud_storage_bucket_block.upload_from_path(from_path=path, to_path=newPath, timeout=(10,200))
+    return
+
+
 
 @flow()
 def etl_flow(yearOne: int, yearTwo: int):
@@ -39,7 +49,8 @@ def etl_flow(yearOne: int, yearTwo: int):
 
     df = fetchData(dataset_url)
     clean = cleanData(df)
-    write_local(clean, yearOne, yearTwo, dataName)
+    path = write_local(clean, yearOne, yearTwo, dataName)
+    write_gcs(path)
 
     
     # write_gcs(path)
