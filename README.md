@@ -19,3 +19,7 @@ I will use the technolgies below to help with the creation of the project:
 * Transforming data: DBT
 * Data Viz: SAS VA/Google Data Studio TBC
 
+## Design architecture
+
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/tech_flow.png)
+
