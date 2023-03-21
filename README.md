@@ -24,3 +24,25 @@ I will use the technolgies below to help with the creation of the project:
 
 ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png)
 
+## Demo of visualisations
+
+gif of visualisation created SAS Visual Analytics:
+
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/demo.gif)
+
+Home page for visualisation:
+
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/Capture.png)
+
+Overview analysis of all seasons:
+
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/second.png)
+
+Individual team analysis:
+
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/third.png)
+
+
+
+
+
