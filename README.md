@@ -30,8 +30,6 @@ gif of visualisation created SAS Visual Analytics:
 
 <img src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/demo.gif" width="800" height="500">
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/demo.gif)
-
 Home page for visualisation:
 
 ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/Capture.PNG)
