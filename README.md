@@ -32,15 +32,15 @@ gif of visualisation created SAS Visual Analytics:
 
 Home page for visualisation:
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/Capture.png)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/Capture.PNG)
 
 Overview analysis of all seasons:
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/second.png)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/second.PNG)
 
 Individual team analysis:
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/third.png)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/third.PNG)
 
 
 
