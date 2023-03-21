@@ -21,5 +21,5 @@ I will use the technolgies below to help with the creation of the project:
 
 ## Design architecture
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/tech_flow.png)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png)
 
