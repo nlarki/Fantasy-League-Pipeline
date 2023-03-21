@@ -28,7 +28,7 @@ I will use the technolgies below to help with the creation of the project:
 
 gif of visualisation created SAS Visual Analytics:
 
-![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/demo.gif)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/demo.gif) =500x500
 
 Home page for visualisation:
 
