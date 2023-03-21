@@ -56,7 +56,7 @@ def etl_flow(yearOne: int, yearTwo: int):
     # write_gcs(path)
 
 @flow() #loop through all possible years of data
-def etl_parent_flow(yr:list[int], yrs:list[int]):
+def etl_parent_flows(yr:list[int], yrs:list[int]):
     for y, x in zip(yr,yrs):
         etl_flow(y,x)
 
@@ -64,4 +64,4 @@ def etl_parent_flow(yr:list[int], yrs:list[int]):
 if __name__ == "__main__":
     yr = [19,20,21,22]
     yrs = [20,21,22,23]
-    etl_parent_flow(yr,yrs)
+    etl_parent_flows(yr,yrs)
