@@ -18,7 +18,7 @@ I will use the technolgies below to help with the creation of the project:
 * Terraform: Infrastructure as code (IaC) - creates project configuration for GCP to bypass cloud GUI.
 * Workflow orchestration: Prefect (docker)
 * Transforming data: DBT
-* Data Viz: SAS VA/Google Data Studio TBC
+* Data Viz: SAS Visual Analytics
 
 ## Design architecture
 
