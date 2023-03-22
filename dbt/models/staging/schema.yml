@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: staging
     database: formidable-fort-375708
-    schema: fpl_finalised
+    schema: raw_players
 
     tables:
-      - name: players_all
+      - name: players

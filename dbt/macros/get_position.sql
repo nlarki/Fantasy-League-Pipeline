@@ -5,10 +5,10 @@
 {% macro get_position(element_type) -%}
 
     case {{ element_type }}
-        when 1 then 'GoalKeeper'
-        when 2 then 'Defender'
-        when 3 then 'Midfield'
-        when 4 then 'Forward'
+        when 1 then 'GK'
+        when 2 then 'DEF'
+        when 3 then 'MID'
+        when 4 then 'FWD'
     end
 
 {%- endmacro %}
