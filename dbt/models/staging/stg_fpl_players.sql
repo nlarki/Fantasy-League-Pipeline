@@ -1,8 +1,6 @@
 {{ config(materialized='table') }}
 
 select 
-    cast(first_name as string) as first_name,
-    cast(second_name as string) as second_name,
     cast(goals_scored as integer) as goals_scored,
     cast(assists as integer) as assists,
     cast(total_points as integer) as total_points,
@@ -22,7 +20,8 @@ select
     cast(element_type as integer) as element_type,
     {{ get_position('element_type') }} as player_position,
     cast(Season as string) as Season,
-    cast(team as string) as team
+    cast(team_code as integer) as team_code,
+    cast(fullname as string) as fullname
 
 
-from {{ source('staging', 'players_all') }}
+from {{ source('staging', 'players') }}
