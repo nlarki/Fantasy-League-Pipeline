@@ -1,10 +1,10 @@
 # Tutorial 
 
 ## Introduction  
-Within this tutorial i plan on explaining how to replicate my envioronment settings, aswell as how to execute the code within the repository. The technologies that have been used for this project are, Prefect, Python, GCP, Terraform, Docker and DBT cloud. It would be advised that you have some basic level understanding of python in order to replicate most of these tasks, however, if youre struggling please reach out. This will be an ever adapting project, with further additional changes in the future to help performance.
+Within this tutorial I plan on explaining how to replicate my envioronment settings, aswell as how to execute the code within the repository. The technologies that have been used for this project are, Prefect, Python, GCP, Terraform, Docker and DBT cloud. It would be advised that you have some basic level understanding of python in order to replicate most of these tasks, however, if youre struggling please reach out. This will be an ever adapting project, with further additional changes in the future to help performance.
 
 ## Setting up GCP - 1
-To begin with, its advised that you create a GCP account so that you can load the files to both Google Cloud Storage and Big Query. You can create an account [here](https://cloud.google.com/).
+To begin with, its advised that you create a GCP account so that you can load the files to both Google Cloud Storage and Big Query later using Python. You can create an account [here](https://cloud.google.com/).
 - **Create a new project**
   - Steps:
     1. Go to the [Google Cloud Console](https://console.cloud.google.com/) and sign into your account.
@@ -59,3 +59,13 @@ To begin with, its advised that you create a GCP account so that you can load th
             ```bash
             gcloud auth application-default login
             ```
+
+- **Add additional Roles and permission (i.e services)**
+  - steps:
+    1. Go to GCP main page
+    2. In the left-hand menu, click on "IAM & Admin" and then select "IAM". You should see the service account we created in the previous steps and our Viewer role.
+    3. On the same row we see our Service account name, click 'edit principal' button which is located in the last column.
+    4. Then add the BigQuery Admin, Storage Admin, Storage Object Admin as roles for our service account and click the save button. 
+    5. Enable IAM APIs by clicking the following links:
+        - [IAM-API](https://console.cloud.google.com/apis/library/iam.googleapis.com)
+        - [IAM-credential-API](https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com)
