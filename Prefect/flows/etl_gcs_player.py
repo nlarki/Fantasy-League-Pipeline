@@ -3,6 +3,7 @@ import os
 import pandas as pd
 from prefect import flow, task
 from prefect_gcp.cloud_storage import GcsBucket
+from prefect_gcp import GcpCredentials
 
 
 @task(retries=3)
@@ -15,16 +16,16 @@ def fetchData(dataset_url: str):
 @task()
 def cleanData(df: pd.DataFrame, yearOne: int, yearTwo: int):
     df["cost"] = df["now_cost"]/10
+    df["fullname"] =df["first_name"] + " " + df["second_name"]
     #creating a list of all columns that i want to keep in finalised dataset
-    final_table_columns = ["first_name","second_name","goals_scored","assists","total_points","minutes",
+    final_table_columns = ["fullname","goals_scored","assists","total_points","minutes",
                            "goals_conceded","creativity","influence","threat","bonus","bps","ict_index",
                            "clean_sheets","red_cards","yellow_cards","selected_by_percent","cost",
-                           "element_type","team"]
+                           "element_type","team_code"]
 
     df.drop(columns=[col for col in df if col not in final_table_columns], inplace=True)
     #create a column to specify what season the data is for and to convert cost to correct values
     df["Season"] = f"20{yearOne}-{yearTwo}"
-    df.rename(columns={'team':'team_id'}, inplace=True)
     print(f"columns: {df.dtypes}")
     print(f"rows: {len(df)}")
     return df
@@ -46,6 +47,17 @@ def write_gcs(path: Path):
     gcp_cloud_storage_bucket_block.upload_from_path(from_path=path, to_path=newPath, timeout=(10,200))
     return
 
+@task
+def write_bq(df: pd.DataFrame):
+    gcp_credentials_block = GcpCredentials.load("fplcreds")
+
+    df.to_gbq(
+        destination_table="raw_players.players",
+        project_id="formidable-fort-375708",
+        credentials=gcp_credentials_block.get_credentials_from_service_account(),
+        if_exists="append"
+    )
+
 
 
 @flow()
@@ -57,6 +69,7 @@ def testing(yearOne: int, yearTwo: int):
     clean = cleanData(df, yearOne, yearTwo)
     path = write_local(clean, yearOne, yearTwo, dataName)
     write_gcs(path)
+    write_bq(clean)
     
     # write_gcs(path)
 
