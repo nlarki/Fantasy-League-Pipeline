@@ -1,7 +1,5 @@
 <h1 style="text-align: center;">FPL data ingestion and analysis ⚽</h1>
 
-FPL ingestion and analysis ⚽
-
 <p align="center">
   <img width="600" height="400" src="https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv">
 </p>
