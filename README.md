@@ -12,9 +12,6 @@ The core premise of this project is to showcase what i have learned whilst parta
 Fantasy Premier league is an [online game](https://fantasy.premierleague.com/#:~:text=With%20over%209%20million%20players,you%20can%20win%20great%20prizes!https://fantasy.premierleague.com/#:~:text=With%20over%209%20million%20players,you%20can%20win%20great%20prizes!) that casts you in the role of a Fantasy manager of Premier League players. You must pick a squad of 15 players from the current Premier League season, who score points for your team based on their performances for their clubs in PL matches.
 
 ## Problem description
-
-<p align="left">
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/11284728357073.56373a378d4a2.gif" height="400">
 The project will aim to extract multiple years of FPL data for analysis so that we can take a deeper look into individual stats of players and teams across the 2016 to 2023 seasons. 
 
 Key insights to be extracted:
