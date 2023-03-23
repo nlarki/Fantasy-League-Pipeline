@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1000" height="400" src="https://logodownload.org/wp-content/uploads/2016/03/premier-league-2.png">
+  <img width="1000" height="300" src="https://logodownload.org/wp-content/uploads/2016/03/premier-league-2.png">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
