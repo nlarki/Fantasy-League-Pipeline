@@ -57,8 +57,6 @@ The dashboard allows the user to ingest a highlevel analysis of both players and
 
 ## How to run the project
 
-## How to make it work?
-
 1. Clone the repo and install the neccesary packages
 
 ```bash
