@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="600" height="400" src="https://www.vhv.rs/dpng/d/154-1547665_premier-league-transparent-background-fantasy-premier-league-logo.png">
+  <img width="600" height="400" src="https://w7.pngwing.com/pngs/32/44/png-transparent-premier-league-logo-2016u201317-premier-league-1992u201393-fa-premier-league-2011u201312-premier-league-2017u201318-premier-league-logo-premier-league-background-purple-violet-text.png">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
