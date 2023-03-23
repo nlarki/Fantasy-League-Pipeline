@@ -1,11 +1,9 @@
 
-<p align="center">
-  <img width="1000" height="400" src="https://i0.wp.com/grahranswowgold.com/wp-content/uploads/2021/07/Fantasy-Premier-League-21-22.png?fit=1600%2C605&ssl=1">
-</p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
 
 ## Overview
+<img align="left" width="300" height="600" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/11284728357073.56373a378d4a2.gif">
 The core premise of this project is to showcase what i have learned whilst partaking in the [Data Talks Club Data Engineering course](https://github.com/DataTalksClub/data-engineering-zoomcamp). I will be utilising multiple tools in order to create an effective pipeline that can ingest and manipulate the sourced [FPL](https://github.com/vaastav/Fantasy-Premier-League) data into a finalised visual dashboard which you can view [here!](https://viyawaves.sas.com/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F7b62f8d0-3df5-45d2-ad4d-451bff9aac39&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&pageNavigation=false&sas-welcome=false) 
 
 ## What is Fantasy Premier League
