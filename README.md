@@ -1,7 +1,6 @@
 
 <p align="center">
-  <img width="1000" height="400" src="![image](https://user-images.githubusercontent.com/25886776/227315236-88e4730d-7e84-40e0-aada-cf7636f0c217.png)
-">
+  <img width="300" height="600" src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/11284728357073.56373a378d4a2.gif">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
