@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="1000" height="300" src="https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv">
+  <img width="1000" height="350" src="https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
