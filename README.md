@@ -115,10 +115,9 @@ prefect deployment run etl-parent-flow/docker_player_flow --param yr=[16,17,18,1
 dbt run
 ```
 6. How the lineage should look once run:
-7. ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/lineage.PNG)
+![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/lineage.PNG)
 
-
-
+7. 
 - this will run all the models and create our final dataset "final_players"
 - final_players will then be placed within the schema chosen when setting up the project in dbt.
 - You can now take the final dataset and use it within Looker or another data visualisation tool like SAS VA which i used.
