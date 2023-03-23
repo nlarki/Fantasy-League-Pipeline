@@ -94,11 +94,21 @@ cd Prefect/
 docker image build -t <docker-username>/fantasy:fpl .
 docker image push <docker-username>/fantasy:fpl
 ```
+- the docker_deploy.py will load the flows into deployment area of prefect so that they can then be run directly from your container.
 ```bash
 cd flows/
 python docker_deploy.py
 ```
-- the docker_deply.py will load the flows into deployment area of prefect so that they can then be run directly from your container.
+- will start the agent to listen for job flows to run
+```bash
+prefect agent start
+```
+- run the flow from CLI:
+- will start the agent to listen for job flows to run
+```bash
+prefect depployment run 
+```
+
 
 
 
