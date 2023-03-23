@@ -35,7 +35,7 @@ I will use the technolgies below to help with the creation of the project:
 ## Architecture visualised:
 
 <p align="center">
-  <img width="400" height="400" src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.PNG">
+  <img width="400" height="400" src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png">
 </p>
 
 
