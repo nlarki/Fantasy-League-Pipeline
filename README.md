@@ -44,6 +44,61 @@ The dashboard allows the user to ingest a highlevel analysis of both players and
 
 ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/player_team.PNG)
 
+## How to run the project
+
+## How to make it work?
+
+1. Clone the repo and install the neccesary packages
+
+```bash
+pip install -r requirements.txt
+```
+2. Next you will want to setup your Google Cloud environment
+- Create a [Google Cloud Platform project] if you do not already have one(https://console.cloud.google.com/cloud-resource-manager)
+- Configure Identity and Access Management (IAM) for the service account, giving it the following privileges: BigQuery Admin, Storage Admin and Storage Object Admin
+- Download the JSON credentials and save it somehwere you'll remember....
+- Install the [Google Cloud SDK](https://cloud.google.com/sdk/docs/install-sdk)
+- Let the [environment variable point to your GCP key](https://cloud.google.com/docs/authentication/application-default-credentials#GAC), authenticate it and refresh the session token
+```bash
+export GOOGLE_APPLICATION_CREDENTIALS=<path_to_your_credentials>.json
+gcloud auth activate-service-account --key-file $GOOGLE_APPLICATION_CREDENTIALS
+gcloud auth application-default login
+```
+3. Set up the infrastructure of the project using Teeraform
+- If you do not have Terraform installed you can install it [here](https://developer.hashicorp.com/terraform/downloads) and then add it to your PATH
+- Once donwloaded run the following commands:
+```bash
+cd terraform/
+terraform init
+terraform plan -var="project=<your-gcp-project-id>"
+terraform apply -var="project=<your-gcp-project-id>"
+```
+4. Run python code in Prefect folder
+- After installing the required python packages, prefect should be installed
+- You can setup the prefect server so that you can access the UI using the command below:
+```bash
+prefect orion start
+```
+- access the UI at: http://127.0.0.1:4200/
+- You will then want to change out the blocks so that they are registered to your credentials for GCS and Big Query. This can be done in the Blocks options
+- You can keep the blocks under the same names as in the code or change them. If you do change them make sure to change the code to reference the new block name
+- Go back to the terminal and run:
+```bash
+cd flows/
+python etl_gcs_player.py
+```
+- The data will then be stored both in your GCS bucket and in Big Query
+- If you want to run the process in Docker you can run the commands below:
+```bash
+cd Prefect/
+docker image build -t <docker-username>/fantasy:fpl .
+docker image push <docker-username>/fantasy:fpl
+```
+```bash
+cd flows/
+python docker_deploy.py
+```
+- the docker_deply.py will load the flows into deployment area of prefect so that they can then be run directly from your container.
 
 
 
