@@ -24,7 +24,7 @@ I will use the technolgies below to help with the creation of the project:
 * Data Viz: SAS Visual Analytics
 
 ## Design architecture
-<img src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png" width="1000" height="800">
+<img src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png" width="1000" height="600">
 
 ## Dashboard of visualisations
 
