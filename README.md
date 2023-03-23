@@ -1,5 +1,9 @@
 # Course Project - FPL ingestion and analysis ⚽
 
+![alt text](![alt text](https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv)
+
+
+
 ## Overview
 The core premise of this project is to showcase what i have learned whilst partaking in the [Data Talks Club Data Engineering course](https://github.com/DataTalksClub/data-engineering-zoomcamp). I will be utilising multiple tools in order to create an effective pipeline that can ingest and manipulate the sourced [FPL](https://github.com/vaastav/Fantasy-Premier-League) data into a finalised visual dashboard which you can view [here!](https://viyawaves.sas.com/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F7b62f8d0-3df5-45d2-ad4d-451bff9aac39&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&pageNavigation=false&sas-welcome=false) 
 
