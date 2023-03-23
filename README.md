@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="600" height="400" src="https://i0.wp.com/grahranswowgold.com/wp-content/uploads/2021/07/Fantasy-Premier-League-21-22.png?fit=1600%2C605&ssl=1">
+  <img width="800" height="400" src="https://i0.wp.com/grahranswowgold.com/wp-content/uploads/2021/07/Fantasy-Premier-League-21-22.png?fit=1600%2C605&ssl=1">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
