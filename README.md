@@ -1,6 +1,6 @@
 # Course Project - FPL ingestion and analysis ⚽
 
-![alt text](https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv)
+![alt text](https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv) align="center"
 
 
 
