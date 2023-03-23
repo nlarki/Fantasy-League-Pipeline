@@ -1,6 +1,6 @@
 
 <p align="center">
-  <img width="600" height="400" src="https://resources.premierleague.com/photos/2020/03/13/e95856bf-6a5d-4508-a77d-d47f31014eb9/FPL_Statement_Graphic.png">
+  <img width="600" height="400" src="https://www.vhv.rs/dpng/d/154-1547665_premier-league-transparent-background-fantasy-premier-league-logo.png">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
