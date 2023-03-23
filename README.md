@@ -16,7 +16,7 @@ Fantasy Premier league is an [online game](https://fantasy.premierleague.com/#:~
 ## Problem description
 
 <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/11284728357073.56373a378d4a2.gif" align="right"
-     alt="footballer" width="120" height="178">
+     alt="footballer" width="120" height="278">
 
 The project will aim to extract multiple years of FPL data for analysis so that we can take a deeper look into individual stats of players and teams across the 2016 to 2023 seasons. 
 
