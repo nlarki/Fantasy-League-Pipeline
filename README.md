@@ -103,11 +103,27 @@ python docker_deploy.py
 ```bash
 prefect agent start
 ```
-- run the flow from CLI:
-- will start the agent to listen for job flows to run
+- run the containerized flow from CLI:
 ```bash
-prefect depployment run 
+prefect deployment run etl-parent-flow/docker_player_flow --param yr=[16,17,18,19,20,21,22] --param yrs=[17,18,19,20,21,22,23]"
 ```
+5. Running the dbt flow
+- Create a dbt account and log in using dbt cloud [here](https://cloud.getdbt.com/)
+- Once logged in clone the repo for use 
+- in the cli at the bottom run the following command:
+```bash
+dbt run
+```
+6. How the lineage should look once run:
+7. ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/lineage.PNG)
+
+
+
+- this will run all the models and create our final dataset "final_players"
+- final_players will then be placed within the schema chosen when setting up the project in dbt.
+- You can now take the final dataset and use it within Looker or another data visualisation tool like SAS VA which i used.
+
+
 
 
 
