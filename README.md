@@ -1,17 +1,23 @@
-
 <p align="center">
-  <img width="1000" height="500" src="https://64.media.tumblr.com/6501ab585025f7150a208b54b9ef7fda/tumblr_mv7nt4KE5V1qaznnlo1_500.gifv">
+  <img width="1000" height="350" src="https://64.media.tumblr.com/25aeda72ad9ae3e5a6680ec6d21778c6/tumblr_mv7nt4KE5V1qaznnlo2_500.gifv">
 </p>
 
 <h1 style="text-align: center;">Fantasy Premier League data ingestion and analysis ⚽</h1>
 
+
 ## Overview
 The core premise of this project is to showcase what i have learned whilst partaking in the [Data Talks Club Data Engineering course](https://github.com/DataTalksClub/data-engineering-zoomcamp). I will be utilising multiple tools in order to create an effective pipeline that can ingest and manipulate the sourced [FPL](https://github.com/vaastav/Fantasy-Premier-League) data into a finalised visual dashboard which you can view [here!](https://viyawaves.sas.com/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F7b62f8d0-3df5-45d2-ad4d-451bff9aac39&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&pageNavigation=false&sas-welcome=false) 
+
+---
 
 ## What is Fantasy Premier League
 Fantasy Premier league is an [online game](https://fantasy.premierleague.com/#:~:text=With%20over%209%20million%20players,you%20can%20win%20great%20prizes!https://fantasy.premierleague.com/#:~:text=With%20over%209%20million%20players,you%20can%20win%20great%20prizes!) that casts you in the role of a Fantasy manager of Premier League players. You must pick a squad of 15 players from the current Premier League season, who score points for your team based on their performances for their clubs in PL matches.
 
 ## Problem description
+
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/11284728357073.56373a378d4a2.gif" align="right"
+     alt="footballer" width="250" height="278">
+
 The project will aim to extract multiple years of FPL data for analysis so that we can take a deeper look into individual stats of players and teams across the 2016 to 2023 seasons. 
 
 Key insights to be extracted:
@@ -21,6 +27,7 @@ Key insights to be extracted:
 * What players have the highest points
 * Who are the most expensive players
 * How many goals are scored per season
+<p>
 
 ## Technologies
 I will use the technolgies below to help with the creation of the project:
@@ -32,8 +39,14 @@ I will use the technolgies below to help with the creation of the project:
 * Transforming data: DBT
 * Data Visualisation: SAS Visual Analytics
 
+## Architecture visualised:
 
-## Dashboard of visualisations
+<p align="center">
+  <img width="400" height="400" src="https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/fpl_arch.png">
+</p>
+
+
+## Dashboard examples
 
 The dashboard allows the user to ingest a highlevel analysis of both players and teams across several seasons in the Barclays Premier League. You can view the dashboard [here](https://viyawaves.sas.com/SASVisualAnalytics/?reportUri=%2Freports%2Freports%2F7b62f8d0-3df5-45d2-ad4d-451bff9aac39&sectionIndex=0&sso_guest=true&reportViewOnly=true&reportContextBar=false&pageNavigation=false&sas-welcome=false)
 
@@ -50,8 +63,6 @@ The dashboard allows the user to ingest a highlevel analysis of both players and
 ![alt text](https://github.com/nlarki/FPL_DE_Zoomcamp/blob/main/images/player_team.PNG)
 
 ## How to run the project
-
-## How to make it work?
 
 1. Clone the repo and install the neccesary packages
 
